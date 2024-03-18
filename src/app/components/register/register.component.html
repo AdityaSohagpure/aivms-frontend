@@ -1,0 +1,56 @@
+<div>
+	<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">AI Driven Visitor Management System</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link " aria-current="page" href="#">Admin</a>
+        <a class="nav-link" href="#">Receptionist</a>
+        <a class="nav-link" href="#">Watchman</a>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" placeholder="User name">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input"  [(ngModel)]="flat_no" [ngModelOptions]="{standalone: true}" placeholder="Falt no.">
+				</div>
+               
+                <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="email" class="login__input"  [(ngModel)]="email" [ngModelOptions]="{standalone: true}" placeholder=" Email">
+				</div>
+                       
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="" class="login__input"  [(ngModel)]="phone"  [ngModelOptions]="{standalone: true}" placeholder="Moblie Number" >
+				</div>
+				
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input"  [(ngModel)]="password" [ngModelOptions]="{standalone: true}" placeholder="Password">
+				</div>
+				<button class="button login__submit" (click)="save()">
+					<span class="button__text">Resister In Now</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>				
+			</form>
+			
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
